@@ -1,0 +1,31 @@
+/* add margin around calendar */
+body:has(div[role='button'][aria-label='Main drawer'][aria-expanded='false']) div[role='main'] div[role='grid'] {
+    margin-left: 8px !important;
+    transition: margin 0.25s ease;
+}
+
+div[role='main'] div[role='grid'] {
+    margin-right: 8px !important;
+}
+
+/* hide Timezone label */
+div[role='main'] div:has(> div[role="presentation"])>div:first-child div[data-text] {
+    display: none !important;
+}
+
+/* hide Side mennu */
+div[aria-label='Side panel'] {
+    display: none !important;
+}
+
+/* hide Create button */
+button[aria-label='Create'] {
+    display: none !important;
+}
+
+button[aria-label='Support'],
+button[aria-label='Switch to Tasks'],
+button[aria-label='Switch to Calendar'],
+a[aria-label='Google apps'] {
+    display: none !important;
+}

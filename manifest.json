@@ -1,0 +1,20 @@
+{
+    "name": "Clean Google Calendar",
+    "description": "cleans up Google Calendar layout",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "assets/img/extension_icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://calendar.google.com/*"
+            ],
+            "css": [
+                "ui_changes.css"
+            ]
+        }
+    ]
+}
