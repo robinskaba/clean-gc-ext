@@ -29,3 +29,18 @@ button[aria-label='Switch to Calendar'],
 a[aria-label='Google apps'] {
     display: none !important;
 }
+
+/* hide Show side panel button/container */
+div[jsname='xeMbY'] {
+    display: none !important;
+}
+
+div:has(> div[aria-label='Show side panel']),
+div[aria-label='Show side panel'] {
+    display: none !important;
+}
+
+/* match bottom spacing with side spacing */
+div[role='main'] {
+    margin-bottom: 8px !important;
+}
