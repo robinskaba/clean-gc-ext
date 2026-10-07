@@ -26,7 +26,9 @@ button[aria-label='Create'] {
 button[aria-label='Support'],
 button[aria-label='Switch to Tasks'],
 button[aria-label='Switch to Calendar'],
-a[aria-label='Google apps'] {
+a[aria-label='Google apps'],
+button[aria-label='Upgrade'],
+div.nn5oJc:has(button[aria-label='Upgrade']) {
     display: none !important;
 }
 
@@ -43,4 +45,9 @@ div[aria-label='Show side panel'] {
 /* match bottom spacing with side spacing */
 div[role='main'] {
     margin-bottom: 8px !important;
+}
+
+/* hide V4oB2d container (Support/Tasks/Calendar switchers) */
+div.V4oB2d {
+    display: none !important;
 }
